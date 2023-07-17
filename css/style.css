@@ -1,0 +1,141 @@
+/* universal selector here */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* -----------some common root css style use for full project start------- */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary-text-color:#3A3A3A;
+}
+/* primary-btn style use here */
+.primary-btn{
+    border-radius: 41px;
+    background: #E02C6D;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 0;
+    padding: 12px 13px;
+}
+/* -----------some common root css style use for full project end------- */
+/* header section style use here */
+header{
+    padding: 50px 120px 20px;
+}
+/* nav section style use here */
+.logo-text{
+    color: var(--primary-text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    gap: 35px;
+}
+ul > li{
+    list-style: none;
+}
+ul > li a{
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+ul > li a:hover{
+    color: #161212;
+}
+/* banner section style use here */
+.banner-section{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+.banner-title{
+    color: var(--primary-text-color);
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 0px;
+}
+.banner-desc{
+    color:var(--primary-text-color);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 16px 0;
+}
+.banner-content{
+    width: 532px;
+}
+.banner-icon{
+    padding-left: 3px;
+}
+.banner-image{
+    padding: 70px 0 50px 0;
+    position: relative;
+}
+.circle-design{
+    width: 400px;
+}
+.camera{
+    position: absolute;
+    width: 372px;
+    transform: translate(50%, 50%);
+    right: 209px;
+    top: -87px;
+}
+/* ==========Responsive (media query) area here========= */
+/* ------mobile device------ */
+@media screen and (max-width:576px) {
+    header {
+        padding: 50px 11px 20px 20px;
+    }
+    nav,ul{
+        flex-direction: column;
+    }
+    nav{
+        justify-content:flex-start;
+    }
+    .logo-text{
+        padding-bottom: 20px;
+    }
+    .banner-section{
+        gap: 30px;
+    }
+    .banner-content{
+        text-align: center;
+        padding-left: 48px;
+        width: 520px;
+
+    }
+    .banner-title{
+        padding-right: 20px;
+        font-size: 2rem;
+    }
+    .banner-desc{
+        padding: 16px 35px 16px 45px;
+    }
+    .banner-image{
+        padding: 83px 128px 30px 133px;
+    }
+    .circle-design{
+        width: 286px;
+    }
+    .camera {
+        position: absolute;
+        width: 250px;
+        transform: translate(50%, 50%);
+        right: 276px;
+        top: -19px;
+    }
+    .banner-section{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+}
