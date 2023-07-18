@@ -6,7 +6,9 @@
 /* -----------some common root css style use for full project start------- */
 body{
     font-family: 'Inter', sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-family: 'Poppins', sans-serif;
+    
 }
 main{
     margin: 0 180px;
@@ -148,6 +150,61 @@ ul > li a:hover{
     font-weight: 700;
     letter-spacing: 0.252px;
 }
+/* feature-section style use here */
+.feature-section{
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    gap: 40px;
+}
+.feature-title{
+    color: #0A0826;
+    font-family: Poppins;
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+.feature-desc{
+    color: #6C6C6C;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+/* footer section here */
+footer{
+    background: #0A0826;
+    padding: 0 180px;
+}
+.footer-container{
+    width: 248px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.footer-title{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+}
+.footer-desc{
+    color: #D9DBE1;
+    font-family: Manrope;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 24px; 
+}
+.footer-container > ol{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.footer-container > ol li{
+    list-style: none;
+}
+.footer-container > ol > li a{
+    color: #D9DBE1;
+}
 /* ==========Responsive (media query) area here========= */
 /* ------mobile device------ */
 @media screen and (max-width:578px) {
@@ -196,6 +253,13 @@ ul > li a:hover{
     .blog-container{
         grid-template-columns: repeat(1,330px);
         justify-content: center;
+    }
+    /* feature-section style use here */
+    .feature-section{
+       flex-direction: column-reverse;
+    }
+    footer{
+        padding: 0px 20px;
     }
 }
 /* -----medium device------ */
