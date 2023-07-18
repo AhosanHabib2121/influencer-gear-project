@@ -56,7 +56,8 @@ ul > li a:hover{
 .banner-section{
     display: flex;
     align-items: center;
-    gap: 150px;
+    gap: 130px;
+    padding: 70px 0 50px 0;
 }
 .banner-title{
     color: var(--primary-text-color);
@@ -77,65 +78,50 @@ ul > li a:hover{
     padding-left: 3px;
 }
 .banner-image{
-    padding: 70px 0 50px 0;
-    position: relative;
+    background: url("../images/Circle\ design.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.circle-design{
-    width: 400px;
-}
-.camera{
-    position: absolute;
-    width: 372px;
-    transform: translate(50%, 50%);
-    right: 209px;
-    top: -87px;
+ .camera{
+    width: 450px;
 }
 /* ==========Responsive (media query) area here========= */
 /* ------mobile device------ */
-@media screen and (max-width:576px) {
+@media screen and (max-width:578px) {
     header {
         padding: 50px 11px 20px 20px;
     }
     nav,ul{
         flex-direction: column;
     }
-    nav{
-        justify-content:flex-start;
-    }
     .logo-text{
         padding-bottom: 20px;
     }
     .banner-section{
+        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 30px;
     }
     .banner-content{
         text-align: center;
-        padding-left: 48px;
-        width: 520px;
-
+        padding-left: 2px;
+        width: 360px;
     }
     .banner-title{
         padding-right: 20px;
         font-size: 2rem;
     }
     .banner-desc{
-        padding: 16px 35px 16px 45px;
+       padding: 16px 50px;
     }
-    .banner-image{
-        padding: 83px 128px 30px 133px;
-    }
-    .circle-design{
-        width: 286px;
-    }
-    .camera {
-        position: absolute;
-        width: 250px;
-        transform: translate(50%, 50%);
-        right: 276px;
-        top: -19px;
-    }
-    .banner-section{
-        flex-direction: column;
-        flex-direction: column-reverse;
+    .camera{
+        width: 300px;
     }
 }
+/* -----medium device------ */
+@media screen and (min-width:568px) and (max-width:960px) {
+    nav{
+        gap: 50px;
+    }
+}   
